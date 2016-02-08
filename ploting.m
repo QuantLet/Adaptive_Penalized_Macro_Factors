@@ -1,10 +1,10 @@
 clc
 clear all
-data=xlsread('figure.xls','Sheet1','A2:J751');
-AE= data(:,1);
-OE= data(:,2);
-OD= data(:,3);
-Time=data(:,4);
+data  = xlsread('figure.xls','Sheet1','A2:J751');
+AE    = data(:,1);
+OE    = data(:,2);
+OD    = data(:,3);
+Time  = data(:,4);
 
 plot(Time,AE,'r');
 hold on;
