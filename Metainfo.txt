@@ -1,6 +1,6 @@
 Name of Quantlet:  Adaptive Penalized MacroFactor
 
-Published in:     'Unpublished; Theoretical description 
+Published in:     'Unpublished - Theoretical description 
                    of why we are going to use the adaptive methods'
 
 Description:      'Builds a classification model to predict
