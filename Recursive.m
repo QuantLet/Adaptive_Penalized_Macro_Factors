@@ -1,17 +1,18 @@
 clc
 clear all
-data=xlsread('data.xlsx','Sheet1','A2:J751');
-y_1 = data(:,1);
-rX_2 = data(:,2);
-rX_3 = data(:,3);
-rX_4 = data(:,4);
-rX_5 = data(:,5);
-f_t_2 = data(:,6);
-f_t_3 = data(:,7);
-f_t_4 = data(:,8);
-f_t_5 = data(:,9);
-N_0=240;
-k=12;
+data    =xlsread('data.xlsx','Sheet1','A2:J751');
+y_1     = data(:,1);
+rX_2    = data(:,2);
+rX_3    = data(:,3);
+rX_4    = data(:,4);
+rX_5    = data(:,5);
+f_t_2   = data(:,6);
+f_t_3   = data(:,7);
+f_t_4   = data(:,8);
+f_t_5   = data(:,9);
+N_0     = 240;
+k       = 12;
+
 for i=1:750;
     c(i)=1;
 end
