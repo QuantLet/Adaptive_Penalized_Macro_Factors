@@ -1,16 +1,16 @@
 clc
 clear all
 data=xlsread('data.xlsx','Sheet1','A2:J751');
-y_1 = data(:,1);
-rX_2 = data(:,2);
-rX_3 = data(:,3);
-rX_4 = data(:,4);
-rX_5 = data(:,5);
-f_t_2 = data(:,6);
-f_t_3 = data(:,7);
-f_t_4 = data(:,8);
-f_t_5 = data(:,9);
-AER = data(:,10);
+y_1     = data(:,1);
+rX_2    = data(:,2);
+rX_3    = data(:,3);
+rX_4    = data(:,4);
+rX_5    = data(:,5);
+f_t_2   = data(:,6);
+f_t_3   = data(:,7);
+f_t_4   = data(:,8);
+f_t_5   = data(:,9);
+AER     = data(:,10);
 for i=1:750;
     c(i)=1;
 end
@@ -22,19 +22,19 @@ for j=240:750;
     belta(:,j)=inv(X'*X)*(X'*Y_1);%%%%estimation for the 2-years excess return
     theta(:,j)=inv(X'*X)*(X'*Y_2);%%%%estimation for the CP factors
 end
-b_1=belta(1,240:750);
-b_2=belta(2,240:750);
-b_3=belta(3,240:750);
-b_4=belta(4,240:750);
-b_5=belta(5,240:750);
-b_6=belta(6,240:750);
-t_1=theta(1,240:750);
-t_2=theta(2,240:750);
-t_3=theta(3,240:750);
-t_4=theta(4,240:750);
-t_5=theta(5,240:750);
-t_6=theta(6,240:750);
-Time=[1:1:511];
+b_1     = belta(1,240:750);
+b_2     = belta(2,240:750);
+b_3     = belta(3,240:750);
+b_4     = belta(4,240:750);
+b_5     = belta(5,240:750);
+b_6     = belta(6,240:750);
+t_1     = theta(1,240:750);
+t_2     = theta(2,240:750);
+t_3     = theta(3,240:750);
+t_4     = theta(4,240:750);
+t_5     = theta(5,240:750);
+t_6     = theta(6,240:750);
+Time    = [1:1:511];
 
 
 subplot(2,3,1)
